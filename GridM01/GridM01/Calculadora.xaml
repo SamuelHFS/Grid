@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="GridM01.Calculadora">
+    <Grid BackgroundColor="Black" RowSpacing="10" ColumnSpacing="20" Margin="10,10,10,10">
+        <Label Text="Label 1" Grid.Row="0" Grid.Column="0"   Grid.ColumnSpan="4" BackgroundColor="DarkRed"/>
+
+        <Label Text="Label 2" Grid.Row="1" Grid.Column="0"  Grid.ColumnSpan="4"   BackgroundColor="Teal"/>
+
+
+        <Button Text="Botão 7" Grid.Row="2" Grid.Column="0" BorderWidth="30" Margin ="10,30,0,0" BackgroundColor="ForestGreen" />
+
+        <Button Text="Home" FontSize="20" BackgroundColor="Yellow"
+                Grid.Row="3" Grid.Column="1"/>
+        <Button Text="Home" FontSize="20" BackgroundColor="Yellow"
+                Grid.Row="3" Grid.Column="2"/>
+
+
+
+        <!--Qtd de Linhas-->
+        <Grid.RowDefinitions>
+            <!--Linha0-->
+            <RowDefinition Height="100"/>
+            <!--Linha1-->
+            <RowDefinition Height="70"/>
+            <!--Linha2-->
+            <RowDefinition Height="100"/>
+            <!--Linha3-->
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        <!--Qtd de Colunas-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+    </Grid>
+</ContentPage>

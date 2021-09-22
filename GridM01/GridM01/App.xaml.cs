@@ -10,7 +10,7 @@ namespace GridM01
         {
             InitializeComponent();
 
-            MainPage = new Page1();
+            MainPage = new Calculadora();
         }
 
         protected override void OnStart()
